@@ -3,3 +3,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card {
+    background-color: theme("backgroundColor.n-card-bg");
+    border-radius: theme("borderRadius.2xl");
+    overflow: hidden;
+    padding: theme("padding[6]");
+  }
+
+  .card__img {
+    border-radius: 0.5rem;
+  }
+
+  .card__header {
+    color: theme("colors.n-white");
+    font-size: 1.35rem;
+    font-weight: theme("fontWeight.semibold");
+    margin-top: 1.35rem;
+  }
+
+  .card__copy {
+    color: theme("colors.p-soft-blue");
+    font-weight: theme("fontWeight.light");
+    margin-top: theme("margin[3]");
+    font-size: theme("fontSize.base");
+  }
+}

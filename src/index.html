@@ -7,22 +7,39 @@
     <title>NFT Preview Card Component</title>
     <script type="module" defer src="/main.js"></script>
   </head>
-  <body class="text-fs-body font-outfit">
-    <main>
-      <img src="images/image-equilibrium.jpg" alt="" />
-      <h1>Equilibrium #3429</h1>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-      <div>
-        <div><img src="images/icon-ethereum.svg" alt="" /></div>
-        <p>0.041 ETH</p>
-      </div>
-      <div>
-        <div><img src="images/icon-clock.svg" alt=""></div>
-        <p>3 days left</p>
-      </div>
-      <div>
-        <div><img src="images/image-avatar.png" alt=""></div>
-        <p>Creation of <span>Jules Wyvern</span></p>
+
+  <body class="text-fs-body font-outfit h-screen">
+    <main class="grid place-items-center p-6 bg-n-main-bg min-h-full">
+      <div class="card">
+        <img class="card__img" src="images/image-equilibrium.jpg" alt="" />
+        <h1 class="card__header">Equilibrium #3429</h1>
+        <p class="card__copy">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="mt-4">
+          <div class="flex justify-between border-b border-b-p-soft-blue pb-3">
+            <div class="flex gap-2 items-center">
+              <div><img src="images/icon-ethereum.svg" alt="" /></div>
+              <p class="text-p-cyan text-base font-semibold">0.041 ETH</p>
+            </div>
+            <div class="flex gap-2 items-center">
+              <div><img src="images/icon-clock.svg" alt="" /></div>
+              <p class="text-p-soft-blue">3 days left</p>
+            </div>
+          </div>
+          <div class="flex items-center mt-4 gap-4">
+            <div class="w-8">
+              <img
+                class="rounded-full border"
+                src="images/image-avatar.png"
+                alt=""
+              />
+            </div>
+            <p class="text-p-soft-blue text-base">
+              Creation of <span class="text-n-white">Jules Wyvern</span>
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   </body>
