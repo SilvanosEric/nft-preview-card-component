@@ -29,4 +29,15 @@
     margin-top: theme("margin[3]");
     font-size: theme("fontSize.base");
   }
+
+  .overlay {
+    visibility: hidden;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: theme("borderRadius.xl");
+  }
 }
